@@ -285,6 +285,9 @@ footer h3{
 	.bloc-titre{
 		background-color: #FF7043;
 	}
+	h1, h2{
+		text-align: center;
+	}
 	.prenom{
 		color: #FFFFFF;
 	}
@@ -331,9 +334,6 @@ footer h3{
    }
    aside{
 	   flex-direction: column;
-   }
-   h1, h2{
-	   text-align: center;
    }
    .liste-recommandation{
 	   flex-direction: column;

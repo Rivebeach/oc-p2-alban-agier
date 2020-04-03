@@ -343,10 +343,14 @@ footer h3{
    }
    .bloc-annee-lieu{
 	padding: 0px 0px 10px 0px;
+	width: 100%;
    }
    .annee-lieu{
 	   display: flex;
 	   flex-direction: row;
+   }
+   .bloc-description{
+	   width: 100%;
    }
    .annee{
 		padding: 0px 5px 0px 0px;

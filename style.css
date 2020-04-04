@@ -1,5 +1,3 @@
-/* -- Pour le reset css -- */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,34 +23,35 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* -- pour le border-box -- */
 
 *, *:before, *:after { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
     box-sizing: border-box; 
 }
-
-/* -- css personalisé -- */
 
 html{
     background-color:#FAFAFA;
@@ -66,12 +65,57 @@ body {
 	color: #424242;
 }
 
+a{
+	text-decoration: none;
+	color: #424242
+}
+
+a:hover{
+	color: #FFFFFF;
+}
+
+.description a:hover{
+	color: #FF7043;
+}
+
 h1{
 	font-size: 3em;
 }
 
 h2{
 	font-size: 1.5em;
+}
+
+aside h3 {
+	font-size: 1.5em;
+	background-color: #424242;
+	color: #FF7043;
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+}
+
+section h3{
+	font-size: 1.5em;
+	padding: 0px 0px 0px 20px;
+}
+
+footer h3{
+	font-size: 1.5em;
+	padding: 5px 10px 5px 10px;
+}
+
+.bloc-loisir h3 {
+	background-color: #424242;
+	color: #FF7043;
+	text-align: center;
+}
+
+h4{
+	font-weight: bold;
+}
+
+span{
+	font-weight: bold;
 }
 
 header{
@@ -119,37 +163,24 @@ aside{
 	background-color: #FF7043;
 }
 
-aside h3 {
-	font-size: 1.5em;
-	background-color: #424242;
-	color: #FF7043;
-	text-align: center;
-	padding: 5px 10px 5px 10px;
-}
-
 .bloc-contact, .bloc-propos{
 	display: flex;
 	flex-direction: column;
+}
+
+.propos p{
+	padding: 0px 0px 10px 0px;
+	word-spacing: 1px;
 	text-align: justify;
 }
-
-.p-contact{
-	padding: 0px 0px 10px 0px;
-}
-
-a{
-	text-decoration: none;
-	color: #424242
-}
-
-a:hover{
-	color: #FFFFFF;
-	}
 
 .contact, .propos{
 	padding: 20px 20px 20px 20px;
 }
 
+.p-contact{
+	padding: 0px 0px 10px 0px;
+}
 
 section{
 	display: flex;
@@ -160,12 +191,7 @@ section{
 }
 
 .bloc-section{
-	padding: 0px 0px 10px 0px;
-}
-
-section h3{
-	font-size: 1.5em;
-	padding: 0px 0px 0px 20px;
+	padding: 0px 0px 0px 0px;
 }
 
 .ligne-section{
@@ -185,12 +211,10 @@ article{
 	padding: 20px 20px 20px 20px;
 }
 
-h4{
-	font-weight: bold;
-}
-
-.fonction{
-	padding: 0px 0px 10px 0px;
+article i{
+	font-size: 0.8em;
+	color: #FF7043;
+	padding: 0px 5px 0px 0px;
 }
 
 .bloc-annee-lieu{
@@ -208,23 +232,17 @@ h4{
 	padding: 10px 0px 0px 0px;
 }
 
-span{
-	font-weight: bold;
+.description p{
+	text-align: justify;
 }
 
-article i{
-	font-size: 0.8em;
-	color: #FF7043;
-	padding: 0px 5px 0px 0px;
+.fonction{
+	padding: 0px 0px 10px 0px;
+	font-weight: bold;
 }
 
 footer{
 	display: flex;
-}
-
-footer h3{
-	font-size: 1.5em;
-	padding: 5px 10px 5px 10px;
 }
 
 .bloc-loisir{
@@ -232,12 +250,6 @@ footer h3{
 	flex-direction: column;
 	width: 30%;
 	background-color: #FF7043;
-}
-
-.bloc-loisir h3 {
-	background-color: #424242;
-	color: #FF7043;
-	text-align: center;
 }
 
 .loisir{
@@ -257,7 +269,6 @@ footer h3{
     padding-left: 10px;
 }
 
-
 .bloc-recommandation{
 	display: flex;
 	flex-direction: column;
@@ -272,7 +283,7 @@ footer h3{
 
 .recommandation{
 	width: 50%;
-	padding: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
 }
 
 .bloc-recommandation i{

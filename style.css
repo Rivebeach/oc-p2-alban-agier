@@ -1,3 +1,5 @@
+/* reset css */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,6 +55,8 @@ table {
     box-sizing: border-box; 
 }
 
+/* règles propre à l'ensemble du document */
+
 html{
     background-color:#FAFAFA;
 }
@@ -86,7 +90,7 @@ h2{
 	font-size: 1.5em;
 }
 
-aside h3 {
+.partie-gauche h3 {
 	font-size: 1.5em;
 	background-color: #424242;
 	color: #FF7043;
@@ -122,6 +126,8 @@ header{
 	display: flex;
 }
 
+/* règles propre au bloc photo à gauche */
+
 .bloc-photo{
 	display: flex;
 	justify-content: center;
@@ -135,6 +141,8 @@ header{
 	border: 3px #FF5722 solid;
 	border-radius: 50%
 }
+
+/* règles propre au bloc titre */
 
 .bloc-titre{
 	display: flex;
@@ -152,15 +160,18 @@ header{
 	border-bottom: 2px solid #FF7043;
 }
 
+/* règles propre au contenu principal */
+
 main{
 	display: flex;
 }
 
-aside{
+.partie-gauche{
 	display: flex;
 	flex-direction: column;
 	width: 30%;
 	background-color: #FF7043;
+	padding: 0px;
 }
 
 .bloc-contact, .bloc-propos{
@@ -241,6 +252,8 @@ article i{
 	color: #FF7043;
 }
 
+/* règles propre au bas de page */
+
 footer{
 	display: flex;
 }
@@ -292,6 +305,8 @@ footer{
 	padding: 0px 0px 5px 0px;
 }
 
+/* règles responsive */
+
 @media all and (max-width: 800px){
 	.bloc-titre{
 		background-color: #FF7043;
@@ -305,7 +320,7 @@ footer{
 	.souligne{
 		border-bottom: 2px solid #FFFFFF;
 	}
-	aside{
+	.partie-gauche {
 		flex-direction: row;
 		width: 100%;
 	}
@@ -343,7 +358,7 @@ footer{
 	   width: 100%;
 	   padding: 0px 0px 20px 0px;
    }
-   aside{
+   .partie-gauche{
 	   flex-direction: column;
    }
    .liste-recommandation{
